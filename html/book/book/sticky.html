@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        background-color: blueviolet;
+        color:white;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .footer{
+        text-align: center;
+        padding:2em;
+    }
+    @media (min-width:760px){
+        .container{
+            width:90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .content{
+            width: 40%;
+            float: left;
+            margin:10px;
+            margin-top: 10px;
+            background-color: blueviolet;
+        }
+        .footer{
+            width: 45%;
+            float: left;
+            margin:10px;
+            background-color: blueviolet;
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <h1>this is header</h1>
+            </div>
+        <div class="row">
+            <div class="content">
+                <h2>this is subheading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam qui dicta nam, necessitatibus non repudiandae sapiente, laboriosam tempore, et exercitationem
+                    repellendus fugit tempora vero
+                    similique porro eum aliquid facilis nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque in quam Veniam, praesentium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur dignissimos,
+                    ullam in quod dicta vero similique assumenda nihil
+                    consectetur!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <ul><li>one</li>
+            <li>two</li>
+            <li>three</li></ul>
+        </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

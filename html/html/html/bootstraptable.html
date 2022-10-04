@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table example</title>   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .first-title,.second-title{
+            height: 100px;
+            text-align: center;
+        }
+        .first-title{
+            
+            background-color: red;
+            color: white;
+        }
+        .second-title{
+            background-color: green;
+            color: white;
+        }
+        .third-title{
+            height: 60px;
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead>
+          <tr class="first-title">
+            <th scope="col" colspan="4">First heading</th>
+          </tr>
+          <tr class="second-title">
+            <th scope="col" colspan="4">Second heading</th>
+          </tr>
+          <tr class="third-title">
+            <th scope="col" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Si.no lists on numbers">SI.No</th>
+            <th scope="col" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="FileNames of sent files ">FileName</th>
+            <th scope="col" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Status of file sent">CheckMark/CrossSign</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Fileone</td>
+            <td>sent</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Filetwo</td>
+            <td>sent</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Filethree</td>
+            <td>sent</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script>
+     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+   </body>
+   </html>

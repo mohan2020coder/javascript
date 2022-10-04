@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ol list style type</title>
+    <style>
+        nav{
+            height: 100px;
+            background-color: bisque;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            padding:10px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        article{
+            float: left;
+            width: 260px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            height: 300px;
+        }
+        #one{
+            background-color: blueviolet;
+            color: white;
+        }
+        #two{
+            background-color: brown;
+            color: white;
+        }
+        #three{
+            background-color: cadetblue;
+            color: white;
+        }
+        footer{
+            height: 300px;
+            background-color: coral;
+            color:white;
+            text-align: center;
+            height: 100px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+     </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="career.html">Career</a></li>
+    </ul>
+</nav>
+<section>
+    <article id="one"><p>Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Possimus assumenda nam velit
+         vero! Dolor enim asperiores nesciunt voluptas
+          eveniet, amet atque inventore, ratione cumque 
+       autem tempore assumenda consequuntur, at veniam!</p></article>
+    <article id="two"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam esse at recusandae repellat id quo repellendus neque dolorum accusamus, 
+        facilis voluptates aliquid sint illo iusto architecto maxime eius hic.</p></article>
+    <article id="three">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In perferendis fuga non sint saepe, eaque deleniti ratione. Vero dolor nesciunt, accusantium impedit sit 
+            quibusdam placeat ipsam dolorum, libero voluptates temporibus!</p>
+    </article>
+</section>
+    <div class="clearfix"></div>
+<footer>
+    <h3>This website is a demo sample page</h3>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+</footer>
+
+</body>
+</html>

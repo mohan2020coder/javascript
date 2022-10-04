@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .parts{
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            float: left;
+            background-color: purple;
+            color: white;
+        }
+        @media screen and (min-width:500px){
+            .parts{
+            width: 50%;
+            height: 300px;
+            padding: 20px;
+            float: left;
+            background-color: purple;
+            color: white;
+        }
+        @media screen and (min-width:900px){
+            .parts{
+            width: 22%;
+            height: 300px;
+            padding: 20px;
+            float: left;
+            background-color: purple;
+            color: white;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parts">one </div>
+        <div class="parts">two</div>
+        <div class="parts">three</div>
+        <div class="parts">four</div>
+    </div>
+</body>
+</html>

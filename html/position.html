@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blueviolet;
+            color: white;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+            background-color: yellow;
+        }
+        .one{ /*parent is container*/
+            position: relative;
+            left:200px;
+        }
+        .two{ /* parent is body*/
+            position: absolute;
+            left: 300px;
+            top:120px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+        <div class="five">five</div>
+    </div>
+    <h2>this is headking</h2>
+    
+</body>
+</html>

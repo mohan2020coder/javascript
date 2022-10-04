@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<style>
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+.nav{
+    background-color: brown;
+    height: 100px;
+    border-radius: 5px;
+}
+.nav ul{
+    list-style-type: none;
+    float: right;
+    margin: -20px;
+}
+.nav li{
+    float: left;
+}
+.nav a{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 20px;
+    padding: 20px;
+}
+.logo{
+    color:white;
+    background-color: blueviolet;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    margin-left: 5px;
+}
+.logo>span{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+#col-3,#col-4{
+    width: 29.93%;
+    float: left;
+    height: 300px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: blueviolet;
+    color:white;
+    border-right: 1px solid gainsboro;
+}
+#col-4{
+    background-color: brown;
+}
+.content ul{
+    border-radius: 2px;
+    border: 1px solid gray;
+    padding: 10px;
+    list-style: none;
+    width: 20%;
+    margin-left: 60px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo"><span>Demo</span> </div>
+            <div class="links">
+                <ul>
+                    <li><a href="tables.html">one |</a></li>
+                    <li><a href="tables.html">two |</a></li>
+                    <li><a href="tables.html">three |</a></li>
+                    <li><a href="tables.html">four |</a></li>
+                    <li><a href="tables.html">five </a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="row">
+                <div id="col-3">
+                    
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                        <li>five</li>
+                    </ul>
+                </div>
+                <div id="col-3">
+                    <video width="300" height="200" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                      </video>
+                </div>
+                <div id="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa doloribus molestias animi tempora modi, odio quis quia velit facere illum quod et iusto aliquam, voluptate omnis similique. Recusandae, soluta.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div id="col-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa doloribus molestias animi tempora modi, odio quis quia velit facere illum quod et iusto aliquam, voluptate omnis similique. Recusandae, soluta.</p>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                        <li>five</li>
+                    </ul>
+                </div>
+                <div id="col-4">
+                    
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                        <li>five</li>
+                    </ul>
+                </div>
+                <div id="col-4">
+                    <video width="300" height="200" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                      </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

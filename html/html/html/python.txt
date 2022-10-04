@@ -1,0 +1,42 @@
+#Functioinal Programming:
+#1. Assigning function to a variable
+#2. Passing function as argument
+#3. Function can be built at execution time
+
+#1. Assigning function to a variable:
+
+
+def add(a,b):
+    sum=a+b
+    print("Sum is:",sum)
+
+
+s=add
+s(4,6)
+
+#2. Passing function as argument
+def mul(x,y,s):
+     prod=x*y
+     print("Product is:",prod)
+     s(2,1)
+m=mul
+m(2,3,s)
+
+
+import sys
+sys.setrecursionlimit(10) # condition to come out of infinite loop
+print(sys.getrecursionlimit())
+
+i=0
+def add(a,b):
+    global i
+    i+=1
+    sum=a+b
+    print(sum,i)
+   # add(2,1) #repetition process would go on for infinite time. default limitation given for recursion is 1000 times
+
+
+add(2,2)
+add(2,3)
+add(2,5)
+add(2,6)
